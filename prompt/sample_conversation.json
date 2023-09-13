@@ -1,0 +1,645 @@
+[
+    {
+        "id" : 0,
+        "image_caption": "On the screen, the face of a 40 year old female patient is visible. The female patient is staring at the screen with a neutral expression.",
+        "dialogue": [
+            {
+                "turn_id" : 0,
+                "system": "How are you feeling right now?",
+                "user": "The situation is stable now.",
+                "belief_state": {
+                    "active or not" : false
+                }
+            },
+            {
+                "turn_id" : 1,
+                "system": "Do you have any medications that you usually take?",
+                "user": "I usually don't take medicine well. Seizures occur only once or twice a year.",
+                "belief_state": {
+                    "panic frequency": "once or twice a year"
+                }
+            },
+            {
+                "turn_id" : 2,
+                "system": "When do seizures usually occur?",
+                "user": "Sometimes when a lot of people look at me, I can't breathe and my heart beats fast.",
+                "belief_state": {
+                    "panic triggering situation": "when a lot of people look at me",
+                    "panic disorder symptoms": ["Palpitations", "Shortness of breath and stuffiness"]
+                }
+            }
+        ]
+    },
+    {
+        "id" : 1,
+        "image_caption": "A 20-year-old male patient is in front of me to be consulted by me about mental illness. He looks fear.",
+        "dialogue": [
+            {
+                "turn_id" : 0,
+                "system": "Are you very uncomfortable right now?",
+                "user": "My heart is beating so fast that I can't breathe.",
+                "belief_state": {
+                    "active or not" : true,
+                    "panic disorder symptoms": ["Palpitations", "Shortness of breath and stuffiness"]
+
+                }
+            },
+            {
+                "turn_id" : 1,
+                "system": "Breathe slowly, I'll be there to help",
+                "user": "(breathing)",
+                "belief_state": {}
+            },
+            {
+                "turn_id" : 2,
+                "system": "Do you often have seizure symptoms?",
+                "user": "Yes. Symptoms often appear like this, so I can't do my daily life at all.",
+                "belief_state": {
+                    "panic frequency": "often appear"
+                }
+            },
+            {
+                "turn_id" : 3,
+                "system": "Do you have any medications that you take regularly?",
+                "user": "There are medications prescribed by a psychiatrist. I've been taking it for 6 months.",
+                "belief_state": {
+                    "medications": "medications prescribed by a psychiatrist"
+                }
+            }
+        ]
+    },
+    {
+        "id" : 2,
+        "image_caption": "On the screen, the face of a 25 year old female patient is visible. She came to me for counseling about mental illness. She's mood on the screen looks embarrassment.",
+        "dialogue": [
+            {
+                "turn_id" : 0,
+                "system": "Are you very uncomfortable right now?",
+                "user": "I was sweating too much when I had a seizure earlier.",
+                "belief_state": {
+                    "active or not" : true,
+                    "panic disorder symptoms": ["Shortness of breath and stuffiness"]
+                }
+            },
+            {
+                "turn_id" : 1,
+                "system": "Do you sweat a lot when you have a seizure?",
+                "user": "Yes. When a seizure occurs, the whole body is wet with sweat.",
+                "belief_state": {}
+            },
+            {
+                "turn_id" : 2,
+                "system": "When do panic symptoms usually start?",
+                "user": "If you get behind the wheel, yes.",
+                "belief_state": {
+                    "panic frequency": "often appear"
+                }
+            },
+            {
+                "turn_id" : 3,
+                "system": "Which of the physical symptoms, fearful thoughts, and avoidance of the factor comes first?",
+                "user": "I think the physical symptoms appear first.",
+                "belief_state": {
+                }
+            }
+        ]
+    },
+    {
+        "id" : 3,
+        "image_caption": "A 30-year-old female patient is shown on the screen. She came to me for counseling about mental illness. First of all, She's mood on the screen looks embarrassment.",
+        "dialogue": [
+            {
+                "turn_id" : 0,
+                "system": "Are you very uncomfortable right now?",
+                "user": "Just a moment ago, I couldn't breathe.",
+                "belief_state": {
+                    "active or not" : true,
+                    "panic disorder symptoms": ["Shortness of breath and stuffiness"]
+                }
+            },
+            {
+                "turn_id" : 1,
+                "system": "Do you find it difficult to breathe when you have a seizure?",
+                "user": "Yes. When I have a seizure, my breathing quickens and my heart feels like it's going to jump out.",
+                "belief_state": {
+                    "panic disorder symptoms": ["Shortness of breath and stuffiness"]
+                }
+            },
+            {
+                "turn_id" : 2,
+                "system": "Under what circumstances do panic symptoms usually start?",
+                "user": "I think it's when i hear a loud noise or a fight.",
+                "belief_state": {
+                    "panic triggering situation": "when i hear a loud noise or a fight"
+
+                }
+            },
+            {
+                "turn_id" : 3,
+                "system": "How long do symptoms last once they appear?",
+                "user": "I'm not sure. I think it's 10 minutes.",
+                "belief_state": {
+                    "duration of symptoms" : "10 minutes"
+                }
+            }
+        ]
+    },
+    {
+        "id" : 4,
+        "image_caption": "A 16-year-old male patient is shown on the screen. He came to me for counseling about mental illness. First of all, He's mood on the screen looks neutral.",
+        "dialogue": [
+            {
+                "turn_id" : 0,
+                "system": "Look comfortable now. Is it before a panic attack? Is it after a seizure?",
+                "user": "I haven't had a seizure yet.",
+                "belief_state": {
+                    "active or not" : false
+                }
+            },
+            {
+                "turn_id" : 1,
+                "system": "Under what circumstances do your panic symptoms usually start?",
+                "user": "It seems to appear when i have an important exam ahead",
+                "belief_state": {
+                    "panic triggering situation": "when i have an important exam ahead"
+                }
+            },
+            {
+                "turn_id" : 2,
+                "system": "What are the symptoms of panic?",
+                "user": "I feel the fear of dying.",
+                "belief_state": {
+                    "panic disorder symptoms": ["Feeling out of control or going crazy, fear of dying"]
+                }
+            },
+            {
+                "turn_id" : 3,
+                "system": "How long did it last?",
+                "user": "I'm not sure, but about 10 minutes.",
+                "belief_state": {
+                    "duration of symptoms": "about 10 minutes"
+                }
+            }
+        ]
+    },
+    {
+        "id" : 5,
+        "image_caption": "On the screen, the face of a 35 year old male patient is visible. The male patient is staring at the screen with a happy expression.",
+        "dialogue": [
+            {
+                "turn_id" : 0,
+                "system": "How are you today? I think you've improved a lot.",
+                "user": "Yes, I feel that way too. The frequency of seizures has been greatly reduced.",
+                "belief_state": {
+                    "active or not": false
+                }
+
+            },
+            {
+                "turn_id" : 1,
+                "system": "How often have you had seizures in the last 6 months?",
+                "user": "I'm thinking of doing it once a month.",
+                "belief_state": {
+                    "panic frequency": "once a month"
+                    
+                }
+            },
+            {
+                "turn_id" : 2,
+                "system": "What are the seizure symptoms?",
+                "user": "I feel cold and shiver. Once symptoms appear, they last for 15 minutes.",
+                "belief_state": {
+                    "panic disorder symptoms": ["Palpitations", "Shortness of breath and stuffiness"],
+                    "duration of symptoms": "15 minutes"
+                }
+            },
+            {
+                "turn_id" : 3,
+                "system": "It must have been so hard. Are you taking the medicine regularly?",
+                "user": "Yes. I am taking the medicine prescribed last time.",
+                "belief_state": {
+                    "medications": "medicine prescribed last time"
+                }
+            }
+        ]
+    },
+    {
+        "id" : 6,
+        "image_caption": "A 23-year-old male patient is in front of me to be consulted by me about mental illness. he looks unrest.",
+        "dialogue": [
+            {
+                "turn_id" : 0,
+                "system": "Are you currently experiencing panic attack symptoms?",
+                "user": "Yes. I suddenly sweat a lot, and I can hear my heart beating too loudly.",
+                "belief_state": {
+                    "active or not": true,
+                    "panic disorder symptoms": ["Palpitations", "Excessive sweating"]
+                }
+            },
+            {
+                "turn_id" : 1,
+                "system": "Take a long breath for 30 seconds. There will be no problem.",
+                "user": "Ok",
+                "belief_state": {                    
+                }
+            },
+            {
+                "turn_id" : 2,
+                "system": "When do seizure symptoms usually appear?",
+                "user": "It shows up when i hear the doorbell. The doorbell sounds so scary.",
+                "belief_state": {
+                    "panic triggering situation": "when i hear the doorbell"
+                }
+            },
+            {
+                "turn_id" : 3,
+                "system": "The doorbell won't hurt you. If symptoms occur, how long will they last?",
+                "user": "About 15 minutes.",
+                "belief_state": {
+                    "duration of symptoms": "about 15 minutes"
+                }
+            },
+            {
+                "turn_id" : 4,
+                "system": "What do you usually do when you have a seizure?",
+                "user": "I felt a little better after I hid under the blanket and counted.",
+                "belief_state": {
+                }
+            },
+            {
+                "turn_id" : 5,
+                "system": "You've found a way to deal with it. Well done.",
+                "user": "Thanks",
+                "belief_state": {
+                }
+            }
+        ]
+    },
+    {
+        "id" : 7,
+        "image_caption": "A 27-year-old female patient is shown on the screen. she came to me for counseling about mental illness. First of all, she's mood on the screen looks happy.",
+        "dialogue": [
+            {
+                "turn_id" : 0,
+                "system": "Do you have a good feeling?",
+                "user": "I haven't had a seizure in the last 6 months.",
+                "belief_state": {
+                    "panic frequency": "not had a seizure in the last 6 months",
+                    "active or not": false
+                }
+            },
+            {
+                "turn_id" : 1,
+                "system": "Good for you. Have you not had a seizure in the midst of a panic-triggering situation?",
+                "user": "Yes, it's okay to make loud noises now.",
+                "belief_state": {
+                    "panic triggering situation": "loud noises"
+                }
+            },
+            {
+                "turn_id" : 2,
+                "system": "Are you okay with your fear of having a panic attack?",
+                "user": "Yes, whenever I am afraid, I keep repeating that panic cannot harm me.",
+                "belief_state": {
+                }
+            },
+            {
+                "turn_id" : 3,
+                "system": "You've improved a lot. Well done.",
+                "user": "Thank you",
+                "belief_state": {
+                }
+            }
+        ]
+    },
+    {
+        "id" : 8,
+        "image_caption": "On the screen, the face of a 15 year old female patient is visible. The female patient is staring at the screen with a neutral expression.",
+        "dialogue": [
+            {
+                "turn_id" : 0,
+                "system": "Are there any special circumstances that trigger a panic attack?",
+                "user": "I'm afraid to wash. I feel fear at the sound of water. I'm so scared I think I'm going to die.",
+                "belief_state": {
+                    "panic triggering situation": "feel fear at the sound of water",
+                    "panic disorder symptoms": ["Feeling out of control or going crazy, fear of dying"]
+                }
+            },
+            {
+                "turn_id" : 1,
+                "system": "What do you think about when you have a seizure?",
+                "user": "The sound resonates in my head and I feel like I'm going crazy.",
+                "belief_state": {
+                    "panic disorder symptoms": ["Tinnitus", "Feeling out of control or going crazy, fear of dying"]
+                }
+            },
+            {
+                "turn_id" : 2,
+                "system": "Panic symptoms won't hurt you. It doesn't even reach.",
+                "user": "Is it really so?",
+                "belief_state": {
+                }
+            },
+            {
+                "turn_id" : 3,
+                "system": "Your test results are normal. You have to realize that panic symptoms won't hurt you.",
+                "user": "Yes, I will try.",
+                "belief_state": {
+                }
+            }
+        ]
+    },
+    {
+        "id" : 9,
+        "image_caption": "A 34-year-old male patient is in front of me to be consulted by me about mental illness. he looks hurt.",
+        "dialogue": [
+            {
+                "turn_id" : 0,
+                "system": "Are there specific situations in which panic attacks occur?",
+                "user": "It seems to happen especially well when I've had a rough day at work.",
+                "belief_state": {
+                    "panic triggering situation": "when I've had a rough day at work"
+
+                }
+            },
+            {
+                "turn_id" : 1,
+                "system": "What's so hard on you at work?",
+                "user": "I don't get along well with my boss at work. I often can't breathe when I'm working..",
+                "belief_state": {
+                    "panic disorder symptoms": ["Shortness of breath and stuffiness"]   
+                }
+            },
+            {
+                "turn_id" : 2,
+                "system": "There is a lot of job stress. Are you okay at home?",
+                "user": "Yes, it's fine at home.",
+                "belief_state": {
+                }
+            }
+        ]
+    },
+    {
+        "id" : 10,
+        "image_caption": "A 65-year-old female patient is in front of me to be consulted by me about mental illness. she looks sad.",
+        "dialogue": [
+            {
+                "turn_id" : 0,
+                "system": "What are you uncomfortable with?",
+                "user": "I'm so scared to enter a windowless room, but there's no way to solve it.",
+                "belief_state": {
+                    "panic disorder symptoms": "enter a windowless room"
+                }
+            },
+            {
+                "turn_id" : 1,
+                "system": "How hard is it to enter a windowless room?",
+                "user": "It's frustrating and scary. I think I'm going crazy.",
+                "belief_state": {
+                    "panic disorder symptoms": ["Feeling out of control or going crazy, fear of dying"]
+                }
+            },
+            {
+                "turn_id" : 2,
+                "system": "How long did your symptoms last?",
+                "user": "I'm not sure, but about 20 minutes.",
+                "belief_state": {
+                    "duration of symptoms": "about 20 minutes"
+                }
+            },
+            {
+                "turn_id" : 3,
+                "system": "Did you get an emergency medicine prescription?",
+                "user": "Yes, I was prescribed Alprazolam.",
+                "belief_state": {
+                    "medications": "Alprazolam"
+                }
+            },
+            {
+                "turn_id" : 4,
+                "system": "Do you eat every time you have a panic attack?",
+                "user": "Yes, it gets better after taking medicine.",
+                "belief_state": {
+                }
+            }
+        ]
+    },
+    {
+        "id" : 11,
+        "image_caption": "A 22-year-old male patient is shown on the screen. he came to me for counseling about mental illness. First of all, he's mood on the screen looks neutral.",
+        "dialogue": [
+            {
+                "turn_id" : 0,
+                "system": "Are you having trouble with your daily life due to panic?",
+                "user": "I can't take the commuter bus because I have seizures when I take the commuter bus.",
+                "belief_state": {
+                    "panic triggering situation": "take the commuter bus"
+                }
+            },
+            {
+                "turn_id" : 1,
+                "system": "You feel uncomfortable riding the bus. How about taking the commuter bus?                ",
+                "user": "My heart aches and I feel nauseous. These symptoms appear every time I get on the bus.",
+                "belief_state": {
+                    "panic disorder symptoms": ["Nausea or abdominal discomfort"],
+                    "panic triggering situation": "i get on the bus"
+                    
+                }
+            },
+            {
+                "turn_id" : 2,
+                "system": "Were there any other symptoms?",
+                "user": "I was dizzy and my hands and feet were numb.",
+                "belief_state": {
+                    "panic disorder symptoms": ["Feeling dizzy, unsteady, dazed, or about to faint", "Numbness or numbness or tingling in the limbs"]
+                }
+            },
+            {
+                "turn_id" : 3,
+                "system": "How long did your symptoms last?",
+                "user": "It was probably about 20-30 minutes.",
+                "belief_state": {
+                    "duration of symptoms": "about 20-30 minutes"
+                }
+            }
+        ]
+    },
+    {
+        "id" : 12,
+        "image_caption": "A 20-year-old female patient is shown on the screen. she came to me for counseling about mental illness. First of all, she's mood on the screen looks angry.",
+        "dialogue": [
+            {
+                "turn_id" : 0,
+                "system": "Are panic attacks interfering with your daily life?",
+                "user": "Yes, I have seizures three or four times a week. I don't want to live anymore.",
+                "belief_state": {
+                    "panic frequency": "three or four times a week"
+                }
+            },
+            {
+                "turn_id" : 1,
+                "system": "You have to cheer up. In what situations do seizures usually occur?",
+                "user": "I'm not sure, but it shows up when I need to call.",
+                "belief_state": {
+                    "panic triggering situation": "when I need to call"   
+                }
+            },
+            {
+                "turn_id" : 2,
+                "system": "Are you afraid of making a phone call?",
+                "user": "Yes, I'm so nervous about having to make a phone call. My whole body was wet with sweat.",
+                "belief_state": {
+                    "panic disorder symptoms": ["Excessive sweating"]
+                }
+            },
+            {
+                "turn_id" : 3,
+                "system": "I see. Were there any other symptoms?",
+                "user": "My heart was beating fast so that i cannot breathe, and my hands and feet were numb, so I had to keep kneading them.",
+                "belief_state": {
+                    "panic disorder symptoms": ["Palpitations", "Shortness of breath and stuffiness", "Numbness or numbness or tingling in the limbs"]
+                }
+            },
+            {
+                "turn_id" : 4,
+                "system": "You must have had a big problem in your daily life. Do you have any prescribed medications?",
+                "user": "No, I kept putting up with not going to the hospital, but now it's hard.",
+                "belief_state": {
+                }
+            }
+        ]
+    },
+    {
+        "id" : 13,
+        "image_caption": "On the screen, the face of a 17 year old male patient is visible. The male patient is staring at the screen with a unrest expression.",
+        "dialogue": [
+            {
+                "turn_id" : 0,
+                "system": "You have a very bad complexion. Are you experiencing any symptoms?",
+                "user": "Yes. My heart beat is so loud that it deafens my ears.",
+                "belief_state": {
+                    "panic disorder symptoms": ["Palpitations"]
+                }
+            },
+            {
+                "turn_id" : 1,
+                "system": "Are there any other symptoms?",
+                "user": "I feel nauseous.",
+                "belief_state": {
+                    "panic disorder symptoms": ["Nausea or abdominal discomfort"]
+                    
+                }
+            },
+            {
+                "turn_id" : 2,
+                "system": "Under what circumstances do you usually have panic attack symptoms?",
+                "user": "I guess it's like when i visit a new place. It's fine at home or at work.",
+                "belief_state": {
+                    "panic triggering situation": "when i visit a new place"
+                }
+            },
+            {
+                "turn_id" : 3,
+                "system": "How long do symptoms last once they appear?",
+                "user": "It's different every time, but about 30 minutes.",
+                "belief_state": {
+                    "duration of symptoms": "about 30 minutes"
+                }
+            },
+            {
+                "turn_id" : 4,
+                "system": "What is frequency of your seizure?",
+                "user": "Not sure, but maybe once or twice a week.",
+                "belief_state": {
+                    "panic frequency": "once or twice a week"
+                }
+            }
+        ]
+    },
+    {
+        "id" : 14,
+        "image_caption": "A 15-year-old female patient is in front of me to be consulted by me about mental illness. she looks happy.",
+        "dialogue": [
+            {
+                "turn_id" : 0,
+                "system": "Your expression brightened. How are you feeling these days?",
+                "user": "Panic is not scary anymore. I'm fine thanks to the advice.",
+                "belief_state": {
+                    "active or not": false
+                }
+            },
+            {
+                "turn_id" : 1,
+                "system": "That's good, what's the seizure frequency?",
+                "user": "My heart beats fast once a month, but it gets better quickly.",
+                "belief_state": {
+                    "panic frequency": "once a month",
+                    "panic disorder symptoms": ["Palpitations"]
+                    
+                }
+            },
+            {
+                "turn_id" : 2,
+                "system": "How long do the symptoms last?",
+                "user": "If you reassure yourself that it's okay, you'll be fine in less than 5 minutes.",
+                "belief_state": {
+                    "duration of symptoms": "less than 5 minutes"
+                }
+            },
+            {
+                "turn_id" : 3,
+                "system": "Good job. You have improved a lot.",
+                "user": "Thank you.",
+                "belief_state": {
+                }
+            }
+        ]
+    },
+    {
+        "id" : 15,
+        "image_caption": "A 19-year-old male patient is shown on the screen. he came to me for counseling about mental illness. First of all, he's mood on the screen looks hurt.",
+        "dialogue": [
+            {
+                "turn_id" : 0,
+                "system": "Are you in a bad mood? Talk about your panic attack symptoms.",
+                "user": "I feel suffocated when i live alone with my dad.",
+                "belief_state": {
+                    "panic triggering situation": "when i live alone with my dad",
+                    "panic disorder symptoms": ["Shortness of breath and stuffiness"]
+                }
+            },
+            {
+                "turn_id" : 1,
+                "system": "Do you have seizures when you are alone with your father?",
+                "user": "That's right.",
+                "belief_state": {
+                    "panic triggering situation": "when i live alone with my dad"
+                }
+            },
+            {
+                "turn_id" : 2,
+                "system": "Do you have any other symptoms besides choking?",
+                "user": "I often scream out loud in anger.",
+                "belief_state": {
+                    "panic disorder symptoms": ["Shortness of breath and stuffiness", "Shout"]
+                }
+            },
+            {
+                "turn_id" : 3,
+                "system": "What do you think about when you have a seizure?",
+                "user": "It's scary, I'm afraid, I think I'm going to die.",
+                "belief_state": {
+                    "panic disorder symptoms": ["Feeling out of control or going crazy, fear of dying"]
+                }
+            },
+            {
+                "turn_id" : 4,
+                "system": "You also feel fear. How long do seizures last?",
+                "user": "It lasts about 10 minutes.",
+                "belief_state": {
+                    "duration of symptoms": "about 10 minutes"
+                }
+            }
+        ]
+    }
+]
