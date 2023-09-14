@@ -41,27 +41,40 @@ python main.py \
 
 ## **Analysis**
 
+
+### **데이터셋 통계**
+|Model|Train|Validation|Test|
+|--|--|--|--|
+|대화 수|8841|2947|2947|
+|턴 수|42633|14104|14168|
+
+
+
+### **턴 수 분포**
 <br>
 <div align=left>
 <img src="./assets/fig_turn_dist.png" width=500/><br>
-<b>대화 당 턴 개수 분포</b>
+대화 당 턴 개수 분포
 </div>
 <br>
 
 
+
+### **슬롯 개수 분포**
 
 <br>
 <div align=left>
 <img src="./assets/fig_slot_dist.png" width=700/><br>
-<b>레이블링된 슬롯 개수 분포</b>
+레이블링된 슬롯 개수 분포
 </div>
 <br>
 
+### **공황장애 증상**
 
 <br>
 <div align=left>
 <img src="./assets/fig_symptom_dist.png" width=700/><br>
-<b>공황장애 증상 분포</b>
+공황장애 증상 분포
 </div>
 <br>
 
