@@ -15,9 +15,9 @@ from functools import reduce
 from typing import Optional, Tuple, Dict, List
 from os.path import join as pjoin
 
-from dataset.builder.base_builder import BaseDatasetBuilder
-from dataset.prompt import TEMPLATES, SYSTEM_MESSAGE
-from data_utils.util import write_json, read_json, mkdir_p, get_extension
+from builder.base_builder import BaseDatasetBuilder
+from prompt import TEMPLATES, SYSTEM_MESSAGE
+from data_utils import write_json, read_json, mkdir_p, get_extension
 
 class MultimodalTodDatasetBuilder(BaseDatasetBuilder):
     def __init__(self, args, leftovers):

@@ -1,1 +1,1 @@
-from dataset.builder.dst_builder import MultimodalTodDatasetBuilder
+from builder.dst_builder import MultimodalTodDatasetBuilder

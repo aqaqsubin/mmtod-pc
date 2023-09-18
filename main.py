@@ -1,7 +1,7 @@
 import argparse
 import datetime
 
-from dataset.builder import MultimodalDstDatasetBuilder
+from builder import MultimodalDstDatasetBuilder
 
 if __name__=="__main__":
     parser = argparse.ArgumentParser()
