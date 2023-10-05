@@ -1,10 +1,6 @@
-import os
-import re
-import cv2
 import time
 import json
 import random
-import torch
 import openai
 import numpy as np
 
@@ -44,7 +40,6 @@ class BaseDatasetBuilder:
     def setup_seeds(self, seed):
         random.seed(seed)
         np.random.seed(seed)
-        torch.manual_seed(seed)
 
     def preprocess_dialogue_fewshot(fewshot_samples: List[Dict]) -> List[Dict]:
         pass

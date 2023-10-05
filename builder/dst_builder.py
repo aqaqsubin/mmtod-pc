@@ -1,23 +1,17 @@
 import os
-import re
-import cv2
-import time
-import json
 import random
-import torch
-import openai
+
 import pandas as pd
 import numpy as np
 
 from tqdm import tqdm
 from glob import iglob
-from functools import reduce
 from typing import Optional, Tuple, Dict, List
 from os.path import join as pjoin
 
 from builder.base_builder import BaseDatasetBuilder
 from prompt import TEMPLATES, SYSTEM_MESSAGE
-from data_utils import write_json, read_json, mkdir_p, get_extension
+from data_utils.util import write_json, read_json, mkdir_p
 
 class MultimodalTodDatasetBuilder(BaseDatasetBuilder):
     def __init__(self, args, leftovers):

@@ -1,7 +1,7 @@
 import argparse
 import datetime
 
-from builder import MultimodalDstDatasetBuilder
+from builder import MultimodalTodDatasetBuilder
 
 if __name__=="__main__":
     parser = argparse.ArgumentParser()
@@ -29,7 +29,7 @@ if __name__=="__main__":
     )
     args, leftovers = parser.parse_known_args()
 
-    data_builder = MultimodalDstDatasetBuilder(args=args, leftovers=leftovers)
+    data_builder = MultimodalTodDatasetBuilder(args=args, leftovers=leftovers)
 
 
     if args.build_prompt:
